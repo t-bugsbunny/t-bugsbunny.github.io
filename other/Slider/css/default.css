@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,500,700);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Dosis', Arial, sans-serif;
+    background: url(../img/backgrounds/background-3.jpg)center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+
+#slider{
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    height: 420px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    transition: all 1s ease-in 0.1s;
+    left:0;
+    opacity: 0;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.arrows {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.arrow:hover{
+    background-color: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.arrow {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: black 0 0 2px;
+    cursor: pointer;
+
+}
+
+.nextBtn {
+    margin-right: 500px;
+}
+
+a.back {
+    display: inline-block;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+a.back:hover { background: rgba(255,255,255,.2); }
+a.back:active { background: white; }
+
+.active {
+    opacity: 1;
+}

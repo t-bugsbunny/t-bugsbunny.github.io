@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+    <title>Bugs Bunny works: horizontal drop-down menu</title>
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+</head>
+<body>
+<header>
+    <a class="back" onclick="GoBack()">Back</a>
+    <div id="logo">
+        <h1>Bugs Bunny</h1>
+        <img src="./img/logo/logo.ico" alt="my logo">
+    </div>
+    <h1>Horizontal drop-down menu</h1>
+    <p>Here you can check my variant of adaptive horizontal drop-down menu in a pure javascript.</p>
+    <p>Change the size of the screen or try to open on a mobile device to see the adaptive part.</p>
+    <p>Also, some links in the menu will lead you to other my works.</p>
+</header>
+<main>
+    <nav>
+        <div id="menuBtn"><a>MENU</a></div>
+        <ul id="main-menu">
+            <li class="btn"><a>ABOUT</a>
+                <ul class="sub-menu">
+                    <li><a>About me</a></li>
+                    <li><a>About my works</a></li>
+                    <li><a>About my hobby</a></li>
+                </ul>
+            </li>
+            <li class="btn"><a>PHOTO</a>
+                <ul class="sub-menu">
+                    <li><a>My photos</a></li>
+                    <li><a>Exhibition gallery</a></li>
+                </ul>
+            </li>
+            <li class="btn"><a>CONTACTS</a>
+                <ul class="sub-menu">
+                    <li><a>Facebook</a></li>
+                    <li><a>Instagram</a></li>
+                    <li><a>Github</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav> 
+</main>
+<script type="text/javascript" src="js/showMenuFunc.js"></script>
+<script type="text/javascript" src="js/dropMenuFunc.js"></script>
+<script>
+    showMenu('btn');
+    dropMenu('main-menu', 'menuBtn');
+</script>
+<script>
+    var GoBack = function (){
+        //здесь можно добавить обработку какой-нибудь логики, при желании
+        window.history.back();
+    };
+</script>
+</body>
+</html>
